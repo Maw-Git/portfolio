@@ -1,4 +1,11 @@
 /* Header del index.html */
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
 .header {
   background-color: white;
   color: black;
@@ -25,6 +32,20 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.nav-list a {
+  color: black;
+}
+
+#theme-toggle {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
 }
   
 .header h1,
@@ -54,6 +75,7 @@ main {
   max-width: 70ch;
   margin: 0 auto 14px auto;
   line-height: 1.2;
+  text-align: center;
 }
 
 #sobre-mi p {
@@ -62,5 +84,139 @@ main {
   margin: 0 auto;
   line-height: 1.65;
   text-wrap: pretty;
+}
+
+#proyectos {
+  width: min(1100px, 92%);
+  margin: 24px auto;
+  height: 50%;
+}
+
+#proyectos h2 {
+  margin: 0 auto 18px auto;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#tecnologias h2 {
+  margin: 0 auto 14px auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#tecnologias {
+  width: 100%;
+  height: 15%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 18px 24px;
+}
+
+#tecnologias .tech-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0 auto;
+  width: min(900px, 100%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#tecnologias .tech-line span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#tecnologias .tech-line img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+footer {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#proyectos .proyecto-1,
+#proyectos .proyecto-2,
+#proyectos .proyecto-3,
+#proyectos .proyecto-4,
+#proyectos .proyecto-5 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+#proyectos .proyecto-1 h3,
+#proyectos .proyecto-2 h3,
+#proyectos .proyecto-3 h3,
+#proyectos .proyecto-4 h3,
+#proyectos .proyecto-5 h3 {
+  margin: 0 0 10px 0;
+}
+
+#proyectos .proyecto-1 p,
+#proyectos .proyecto-2 p,
+#proyectos .proyecto-3 p,
+#proyectos .proyecto-4 p,
+#proyectos .proyecto-5 p {
+  margin: 0 0 14px 0;
+  line-height: 1.6;
+}
+
+#proyectos .proyecto-1 img,
+#proyectos .proyecto-2 img,
+#proyectos .proyecto-3 img,
+#proyectos .proyecto-4 img,
+#proyectos .proyecto-5 img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+body.dark-mode {
+  background-color: #111111;
+  color: #f3f3f3;
+}
+
+body.dark-mode .header,
+body.dark-mode #sobre-mi,
+body.dark-mode #tecnologias,
+body.dark-mode #proyectos .proyecto-1,
+body.dark-mode #proyectos .proyecto-2,
+body.dark-mode #proyectos .proyecto-3,
+body.dark-mode #proyectos .proyecto-4,
+body.dark-mode #proyectos .proyecto-5,
+body.dark-mode footer {
+  background-color: #1c1c1c;
+  color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+body.dark-mode .header h1,
+body.dark-mode .header .main-title,
+body.dark-mode .nav-list a {
+  color: #f3f3f3;
+}
+
+body.dark-mode #theme-toggle {
+  border-color: #f3f3f3;
+  background-color: #2a2a2a;
+  color: #f3f3f3;
 }
   
