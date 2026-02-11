@@ -1,0 +1,31 @@
+/* Header del index.html */
+.header {
+    background-color: white;
+    color: black;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+  
+.header nav {
+    justify-self: start; /* nav a la izquierda */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header h1,
+  .header .main-title {
+    justify-self: center; /* título centrado */
+    font-size: 3rem; /* tamaño main title */
+    margin: 0;
+    color: black;
+  }
+  
